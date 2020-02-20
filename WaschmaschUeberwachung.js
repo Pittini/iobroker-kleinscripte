@@ -18,14 +18,10 @@ function VerifyRunning() {
     if (Running == true && OldRunning == false) {
         OldRunning = true;
         log("Waschmaschine gestartet");
-        WriteEventLog("Waschmaschine gestartet");
-
     }
     else if (Running == false && OldRunning == true) {
         OldRunning = false
         log("Waschmaschine ist fertig");
-        WriteEventLog("Waschmaschine ist fertig");
-        Say("Waschmaschine ist fertig");
     };
 };
 
